@@ -26,7 +26,7 @@ public class ParserData {
 	}
     private static void GetuniqID() throws Exception
     {
-    	FileReader uniqIDReader= new FileReader(Parmaters.Uniq_Txt);
+    	FileReader uniqIDReader= new FileReader(Parmaters.ClassCList);
     	BufferedReader uniqIDBR = new BufferedReader(uniqIDReader);
     	while(uniqIDBR.ready())
     	{
@@ -52,7 +52,7 @@ public class ParserData {
     }
 	private static void IsSpecialID() throws Exception {
 		// TODO Auto-generated method stub
-		FileWriter fw = new FileWriter(Parmaters.Output_Txt);
+		FileWriter fw = new FileWriter(Parmaters.ClassCDetail);
 		for(String arlist:uinqID)
 		{
 			 i+=1; 
