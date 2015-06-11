@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
-public class ParserData {
+public class ParserData_step3 {
 	private static Parmaters parmaters ;
 	private static ArrayList<String> uinqID = new ArrayList<>();
 	private static ArrayList<String> fullDataArlist = new ArrayList<>();
@@ -41,7 +41,7 @@ public class ParserData {
     private static void CheckData() throws Exception
     {
     	String temp ;
-    	FileReader FullDataReader= new FileReader(Parmaters.FullDRGs_Txt);
+    	FileReader FullDataReader= new FileReader(Parmaters.FullDRGs_CLass10_txt);
     	BufferedReader FullDataBR = new BufferedReader(FullDataReader);
     	while(FullDataBR.ready())
     	{
@@ -52,7 +52,7 @@ public class ParserData {
     }
 	private static void IsSpecialID() throws Exception {
 		// TODO Auto-generated method stub
-		FileWriter fw = new FileWriter(Parmaters.ClassCDetail);
+		FileWriter fw = new FileWriter(Parmaters.ClassC_Class_Detail);
 		for(String arlist:uinqID)
 		{
 			 i+=1; 
